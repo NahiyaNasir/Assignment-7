@@ -1,0 +1,105 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Spaghetti Carbonara",
+      "short_description": "Classic Italian pasta dish with creamy sauce.",
+      "calories": 450,
+      "preparing_time": 30,
+      "ingredients": [
+        "200g spaghetti",
+        "100g pancetta",
+        "2 eggs",
+        "50g grated Parmesan cheese",
+        "2 cloves garlic",
+        "Salt and pepper to taste"
+      ],
+      "recipe_img": "https://i.ibb.co/4jvWxrH/anh-nguyen-kc-A-c3f-3-FE-unsplash.jpg"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Chicken Stir-Fry",
+      "short_description": "Quick and delicious stir-fried chicken with vegetables.",
+      "calories": 350,
+      "preparing_time": 25,
+      "ingredients": [
+        "300g chicken breast, sliced",
+        "1 bell pepper, sliced",
+        "1 onion, sliced",
+        "2 tbsp soy sauce",
+        "1 tbsp vegetable oil",
+        "Salt and pepper to taste"
+      ],
+      "recipe_img": "https://i.ibb.co/yWCFQxx/homescreenify-s-A3wym-Yqya-I-unsplash.jpg"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Curry",
+      "short_description": "Flavorful vegetarian curry with assorted vegetables.",
+      "calories": 300,
+      "preparing_time": 40,
+      "ingredients": [
+        "1 potato, diced",
+        "1 carrot, sliced",
+        "1 cup cauliflower florets",
+        "1 cup green peas",
+        "1 onion, chopped",
+        "2 tbsp curry powder",
+        "200ml coconut milk",
+        "Salt to taste"
+      ],
+      "recipe_img": "https://i.ibb.co/kg3VnFb/kalyani-akella-6-Zxmo-CTe9-PU-unsplash.jpg"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Grilled Salmon with Asparagus",
+      "short_description": "Healthy and delicious grilled salmon with roasted asparagus.",
+      "calories": 300,
+      "preparing_time": 35,
+      "ingredients": [
+        "2 salmon fillets",
+        "1 bunch asparagus",
+        "2 tbsp olive oil",
+        "1 lemon, sliced",
+        "Salt and pepper to taste"
+      ],
+      "recipe_img": "https://i.ibb.co/sRF4hjf/ca-creative-bp-PTl-XWTOvg-unsplash.jpgs"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Mushroom Risotto",
+      "short_description": "Creamy and flavorful Italian rice dish with mushrooms.",
+      "calories": 400,
+      "preparing_time": 45,
+      "ingredients": [
+        "1 cup Arborio rice",
+        "200g mushrooms, sliced",
+        "1 onion, finely chopped",
+        "2 cloves garlic, minced",
+        "1/2 cup white wine",
+        "1 liter vegetable broth",
+        "50g grated Parmesan cheese",
+        "2 tbsp butter",
+        "Salt and pepper to taste"
+      ],
+      "recipe_img": "https://i.ibb.co/ZLG9M9j/pinar-kucuk-Ae7j-QFDTPk4-unsplash.jpg"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Banana Pancakes",
+      "short_description": "Fluffy and delicious pancakes made with ripe bananas.",
+      "calories": 250,
+      "preparing_time": 20,
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "1 ripe banana, mashed",
+        "1 egg",
+        "1 cup milk",
+        "2 tbsp sugar",
+        "1 tsp baking powder",
+        "1/2 tsp vanilla extract",
+        "Butter or oil for cooking"
+      ],
+      "recipe_img": "https://i.ibb.co/7tHzPHc/estudio-bloom-2o7n-A-TUXc-unsplash.jpg"
+    }
+  ]
+  
