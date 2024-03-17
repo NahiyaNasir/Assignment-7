@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 
 const Singlecook = ({cook,handelPreparing,}) => {
     const{recipe_name,preparing_time,calories,recipe_id}=cook
+    
     return (
         <div>
 

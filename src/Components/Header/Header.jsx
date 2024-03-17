@@ -42,8 +42,8 @@
   <div className="hero-overlay "></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Discover an exceptional cooking <br /> class tailored for you!</h1>
-      <p className="mb-5">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
+      <h1 className="mb-5 text-5xl font-bold">Discover an exceptional cooking <br /> </h1>
+      <p className="mb-5 text-xl font-bold">it is not about food it is about  experience.</p>
       <div className="flex gap-4 items-center">
       <button className="btn btn-primary rounded-3xl">Explore Now</button>
 

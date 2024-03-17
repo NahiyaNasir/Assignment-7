@@ -10,16 +10,19 @@ import { ToastContainer, toast } from 'react-toastify';
 function App() {
  const[cooks, setCook]=useState([])
  const [cookings,setCooking]=useState([])
- 
+ const [remove, setRemove]=useState([])
  const handelPreparing=(cooking,id)=>{
   console.log('clicked')
   console.log(id);
   const newCooking=[...cookings, cooking]
   setCooking(newCooking)
- // const newCart=cooking.filter(cart=> cart.recipe_id!== id)
- // setCook(newCart)
+ 
+ const newRemove=remove.filter(item=>item.recipe_id !==id)
+ setRemove(newRemove)
+console.log(newRemove);
  }
 const handelWantToCook=(recipe)=>{
+  
   
   const isExists= cooks.find(item=>item.recipe_id == recipe.recipe_id)
    if(!isExists){
@@ -29,8 +32,7 @@ const handelWantToCook=(recipe)=>{
   toast.warn('already exists')
    }
        //remove
-   
-   }
+}
   
  // console.log(cookings);
   return (

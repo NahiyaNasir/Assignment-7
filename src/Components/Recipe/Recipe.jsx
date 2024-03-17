@@ -4,9 +4,9 @@ import { CiStopwatch} from "react-icons/ci"
 import { FaFire } from "react-icons/fa";
 
 
-const Recipe = ({recipe,handelWantToCook,handelRemove,id}) => {
+const Recipe = ({recipe,handelWantToCook,}) => {
   
-    const {recipe_img,recipe_name,short_description,preparing_time,calories,ingredients,}=recipe
+    const {recipe_img,recipe_name,short_description,preparing_time,calories,ingredients,recipe_id}=recipe
     return (
         <div className=''>
             
@@ -25,15 +25,17 @@ const Recipe = ({recipe,handelWantToCook,handelRemove,id}) => {
        
       }</ul>
     <div className='flex  gap-4'>
-      <div className=''>
-    <p >  <CiStopwatch  />{preparing_time} min  </p>
-    <p><FaFire />{calories}</p>
+      <div className=' flex  '>
+      <CiStopwatch  />
+    <p >  {preparing_time} min  </p>
+    <FaFire />
+    <p>{calories} calories</p>
       </div>
       
     </div>
     <div className="card-actions">
-      <button className="btn btn-primary" onClick={()=>{ handelWantToCook(recipe)
-    handelRemove(id)
+      <button className="btn btn-primary" onClick={()=>{ handelWantToCook(recipe,recipe_id)
+    
     
       }
         }>Want To Cook</button>

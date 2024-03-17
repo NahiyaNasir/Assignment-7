@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Singlecook from '../SingleCook/Singlecook';
 import Cooking from '../Cooking/Cooking';
 
-const Cook = ({cooks,handelPreparing,cookings}) => {
+const Cook = ({cooks,handelPreparing,cookings,}) => {
     return (
         <div className="w-1/3 border-b-2 mt-4">
             
@@ -14,6 +14,7 @@ const Cook = ({cooks,handelPreparing,cookings}) => {
                 cooks.map((cook,id)=><Singlecook  key={id } cook={cook} 
 
                 handelPreparing={handelPreparing}
+               
                  ></Singlecook>)
             }
              </div>
