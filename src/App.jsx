@@ -9,9 +9,15 @@ import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
  const[cooks, setCook]=useState([])
+ const [cookings,setCooking]=useState([])
+ const handelPreparing=(cooking)=>{
+  console.log('clicked')
+  const newCooking=[...cookings, cooking]
+  setCooking(newCooking)
+ }
 const handelWantToCook=(recipe)=>{
   
-  const isExists= cooks.find(item=> item.id ==recipe.id)
+  const isExists= cooks.find(item=>item.recipe_id == recipe.recipe_id)
    if(!isExists){
     setCook([...cooks, recipe])
      
@@ -21,15 +27,17 @@ const handelWantToCook=(recipe)=>{
  
   
    }
-
+  console.log(cookings);
   return (
     <>
      <div className=' mx-auto container'>
       <Header></Header>
     
      <div className=' flex '>
-      <Recipes handelWantToCook={handelWantToCook}></Recipes>
-      <Cook cooks={cooks}></Cook>
+      <Recipes handelWantToCook={handelWantToCook}
+     ></Recipes>
+      <Cook cooks={cooks}  cookings={cookings}
+      handelPreparing={handelPreparing}></Cook>
      </div>
      <ToastContainer></ToastContainer>
      </div>

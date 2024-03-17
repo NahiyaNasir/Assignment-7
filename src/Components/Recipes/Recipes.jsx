@@ -19,6 +19,7 @@ const Recipes = ({handelWantToCook}) => {
 
                 recipe={recipe}
                 handelWantToCook={handelWantToCook}
+              
                 >
 
                 </Recipe>)

@@ -1,16 +1,10 @@
 
 import PropTypes from 'prop-types'
-
-
-
-const Singlecook = ({cook,handelPreparing}) => {
-    const{recipe_name,preparing_time,calories,recipe_id}=cook
+const Cooking = ({cooking}) => {
+    const{ recipe_name, recipe_id, preparing_time,calories}=cooking
     return (
         <div>
-
-
-   
-            <div className="overflow-x-auto ">
+            <div className="overflow-x-auto  bg-slate-200 rounded-xl m-4 ">
   <table className="table ">
     {/* head */}
     <thead>
@@ -35,7 +29,7 @@ const Singlecook = ({cook,handelPreparing}) => {
 <td className="row-span-3">{recipe_name}</td>
         <td className="row-span-3">{preparing_time} mini</td>
         <td className="row-span-3">{calories} calories</td>
-        <button className="btn btn-success"onClick={()=> handelPreparing(cook)}> preparing</button>
+        
       </tr>
      
       
@@ -44,23 +38,12 @@ const Singlecook = ({cook,handelPreparing}) => {
     </tbody>
   </table>
 </div>
-
-       
-
-     
-
-
-
-     
-
-
-
-
+            
         </div>
     );
 };
-Singlecook.propTypes={
-  cook:PropTypes.any,
-  handelPreparing:PropTypes.func
+Cooking.propTypes={
+    cooking:PropTypes.any
 }
-export default Singlecook;
+
+export default Cooking;
