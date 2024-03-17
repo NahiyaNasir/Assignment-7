@@ -4,9 +4,9 @@ import { CiStopwatch} from "react-icons/ci"
 import { FaFire } from "react-icons/fa";
 
 
-const Recipe = ({recipe,handelWantToCook,handelRemove}) => {
+const Recipe = ({recipe,handelWantToCook,handelRemove,id}) => {
   
-    const {recipe_img,recipe_name,short_description,preparing_time,calories,ingredients, recipe_id}=recipe
+    const {recipe_img,recipe_name,short_description,preparing_time,calories,ingredients,}=recipe
     return (
         <div className=''>
             
@@ -33,7 +33,7 @@ const Recipe = ({recipe,handelWantToCook,handelRemove}) => {
     </div>
     <div className="card-actions">
       <button className="btn btn-primary" onClick={()=>{ handelWantToCook(recipe)
-    handelRemove(recipe_id)
+    handelRemove(id)
     
       }
         }>Want To Cook</button>

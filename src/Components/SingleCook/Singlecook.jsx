@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 
 
 
-const Singlecook = ({cook,handelPreparing}) => {
+const Singlecook = ({cook,handelPreparing,}) => {
     const{recipe_name,preparing_time,calories,recipe_id}=cook
     return (
         <div>
 
 
    
-            <div className="overflow-x-auto ">
+            <div className="overflow-x-auto bg-gray-200  m-4 rounded-sm">
   <table className="table ">
     {/* head */}
     <thead>

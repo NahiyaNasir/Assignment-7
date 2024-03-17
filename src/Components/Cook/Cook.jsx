@@ -8,7 +8,7 @@ const Cook = ({cooks,handelPreparing,cookings}) => {
         <div className="w-1/3 border-b-2 mt-4">
             
            
-             <div className=' mt-6 bg-slate-500'>
+             <div className=' mt-6 bg-slate-500 '>
              <h2 className="text-2xl text-center">Want To Cook:{cooks.length}</h2>
              {
                 cooks.map((cook,id)=><Singlecook  key={id } cook={cook} 

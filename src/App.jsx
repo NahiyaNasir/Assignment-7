@@ -10,13 +10,16 @@ import { ToastContainer, toast } from 'react-toastify';
 function App() {
  const[cooks, setCook]=useState([])
  const [cookings,setCooking]=useState([])
- const [remove, setRemove]=useState([])
- const handelPreparing=(cooking)=>{
- // console.log('clicked')
+ 
+ const handelPreparing=(cooking,id)=>{
+  console.log('clicked')
+  console.log(id);
   const newCooking=[...cookings, cooking]
   setCooking(newCooking)
+ // const newCart=cooking.filter(cart=> cart.recipe_id!== id)
+ // setCook(newCart)
  }
-const handelWantToCook=(recipe,id)=>{
+const handelWantToCook=(recipe)=>{
   
   const isExists= cooks.find(item=>item.recipe_id == recipe.recipe_id)
    if(!isExists){
@@ -26,11 +29,10 @@ const handelWantToCook=(recipe,id)=>{
   toast.warn('already exists')
    }
        //remove
-    const newRemove= remove.filter(item=>item.id !==id.id)
-    setRemove([...newRemove,id])
+   
    }
   
-  //console.log(cookings);
+ // console.log(cookings);
   return (
     <>
      <div className=' mx-auto container'>
@@ -38,9 +40,10 @@ const handelWantToCook=(recipe,id)=>{
     
      <div className=' flex '>
       <Recipes handelWantToCook={handelWantToCook}
-    
+
      ></Recipes>
-      <Cook cooks={cooks}  cookings={cookings}
+     
+      <Cook cooks={cooks}  cookings={cookings} 
       handelPreparing={handelPreparing}></Cook>
       
      </div>
