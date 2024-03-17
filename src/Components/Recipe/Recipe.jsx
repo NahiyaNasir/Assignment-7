@@ -4,9 +4,9 @@ import { CiStopwatch} from "react-icons/ci"
 import { FaFire } from "react-icons/fa";
 
 
-const Recipe = ({recipe,handelWantToCook}) => {
+const Recipe = ({recipe,handelWantToCook,handelRemove}) => {
   
-    const {recipe_img,recipe_name,short_description,preparing_time,calories}=recipe
+    const {recipe_img,recipe_name,short_description,preparing_time,calories,ingredients, recipe_id}=recipe
     return (
         <div className=''>
             
@@ -17,12 +17,26 @@ const Recipe = ({recipe,handelWantToCook}) => {
   <div className="card-body items-center text-center">
     <h2 className="card-title">{recipe_name}</h2>
     <p>{short_description}</p>
+      <h5 className='font-bold text-1xl'>Ingredients:{ingredients.length}</h5>
+    <ul className='list-disc'>
+      
+      {
+        ingredients.map((ing,idx)=>       <li key={idx}>{ing}  </li>)
+       
+      }</ul>
     <div className='flex  gap-4'>
-      <CiStopwatch  />{preparing_time} min  
+      <div className=''>
+    <p >  <CiStopwatch  />{preparing_time} min  </p>
     <p><FaFire />{calories}</p>
+      </div>
+      
     </div>
     <div className="card-actions">
-      <button className="btn btn-primary" onClick={()=>handelWantToCook(recipe)}>Want To Cook</button>
+      <button className="btn btn-primary" onClick={()=>{ handelWantToCook(recipe)
+    handelRemove(recipe_id)
+    
+      }
+        }>Want To Cook</button>
     
     </div>
   </div>
@@ -41,7 +55,9 @@ const Recipe = ({recipe,handelWantToCook}) => {
 };
 Recipe.propTypes={
     recipe:PropTypes.object, 
-    handelWantToCook:PropTypes.func
+    handelWantToCook:PropTypes.func,
+    handelRemove:PropTypes.func
+   
 }
 
 export default Recipe;

@@ -15,7 +15,7 @@ const Singlecook = ({cook,handelPreparing}) => {
     {/* head */}
     <thead>
     <tr>
-     <th></th>
+     <th>No</th>
      <th className=' '>Name</th>
      <th className=' '>Time</th>
      <th className=' '>calories</th>
@@ -30,7 +30,7 @@ const Singlecook = ({cook,handelPreparing}) => {
           <tr>
 
 
-
+         
         <th>{recipe_id}</th>
 <td className="row-span-3">{recipe_name}</td>
         <td className="row-span-3">{preparing_time} mini</td>

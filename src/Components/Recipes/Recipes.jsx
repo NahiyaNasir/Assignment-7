@@ -3,7 +3,7 @@ import { useState } from "react";
 import Recipe from "../Recipe/Recipe";
 import PropTypes from 'prop-types'
 
-const Recipes = ({handelWantToCook}) => {
+const Recipes = ({handelWantToCook,handelRemove}) => {
     const [ recipes, setRecipes]=useState([])
     useEffect(()=>{
        fetch('recipe.json')
@@ -19,7 +19,7 @@ const Recipes = ({handelWantToCook}) => {
 
                 recipe={recipe}
                 handelWantToCook={handelWantToCook}
-              
+              handelRemove={handelRemove}
                 >
 
                 </Recipe>)
@@ -28,7 +28,8 @@ const Recipes = ({handelWantToCook}) => {
     );
 };
 Recipes.propTypes={
-     handelWantToCook:PropTypes.func
+     handelWantToCook:PropTypes.func,
+     handelRemove: PropTypes.func
 }
 
 export default Recipes;
