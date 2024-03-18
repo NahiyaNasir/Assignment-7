@@ -7,14 +7,7 @@ const Cooking = ({cooking}) => {
             <div className="overflow-x-auto  bg-slate-200 rounded-xl m-4 ">
   <table className="table ">
     {/* head */}
-    <thead>
-    <tr>
-    <th>No</th>
-     <th className=' '>Name</th>
-     <th className=' '>Time</th>
-     <th className=' '>calories</th>
-   </tr>
-    </thead>
+   
     <tbody>
       {/* row 1 */}
       <tr>

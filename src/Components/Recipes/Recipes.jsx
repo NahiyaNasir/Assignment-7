@@ -11,8 +11,14 @@ const Recipes = ({handelWantToCook,handelRemove}) => {
      .then(data=>setRecipes(data))
     },[])
     return (
-        <div className="grid grid-cols-2 gap-4 mx-auto">
-           
+        <div >
+            <div className="text-2xl text-center font-bold">
+            <h1 className="">Our Recipes</h1>
+            <p className="text-red-400 "> Here are  some of our poplars dishes </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-4 mx-auto grid-cols-1">
+                 
             {
                 recipes.map(( recipe,id)=><Recipe key={id}
                
@@ -24,6 +30,9 @@ const Recipes = ({handelWantToCook,handelRemove}) => {
 
                 </Recipe>)
             }
+            </div>
+           
+            
         </div>
     );
 };

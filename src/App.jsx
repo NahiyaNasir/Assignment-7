@@ -40,7 +40,8 @@ const handelWantToCook=(recipe)=>{
      <div className=' mx-auto container'>
       <Header></Header>
     
-     <div className=' flex '>
+     <div className=' flex  '>
+      
       <Recipes handelWantToCook={handelWantToCook}
 
      ></Recipes>

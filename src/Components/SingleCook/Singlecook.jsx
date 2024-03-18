@@ -12,16 +12,9 @@ const Singlecook = ({cook,handelPreparing,}) => {
 
    
             <div className="overflow-x-auto bg-gray-200  m-4 rounded-sm">
-  <table className="table ">
+            <table className="table ">
     {/* head */}
-    <thead>
-    <tr>
-     <th>No</th>
-     <th className=' '>Name</th>
-     <th className=' '>Time</th>
-     <th className=' '>calories</th>
-   </tr>
-    </thead>
+   
     <tbody>
       {/* row 1 */}
       <tr>
