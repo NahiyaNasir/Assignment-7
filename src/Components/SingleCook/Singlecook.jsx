@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 
 
-const Singlecook = ({cook,handelPreparing,}) => {
+const Singlecook = ({cook,handelPreparing}) => {
     const{recipe_name,preparing_time,calories,recipe_id}=cook
     
     return (
@@ -29,7 +29,7 @@ const Singlecook = ({cook,handelPreparing,}) => {
 <td className="row-span-3">{recipe_name}</td>
         <td className="row-span-3">{preparing_time} mini</td>
         <td className="row-span-3">{calories} calories</td>
-        <button className="btn btn-success"onClick={()=> handelPreparing(cook)}> preparing</button>
+        <button className="btn btn-success"onClick={()=> handelPreparing(cook,recipe_id)}> preparing</button>
       </tr>
      
       

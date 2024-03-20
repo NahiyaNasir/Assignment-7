@@ -31,7 +31,9 @@ const Cooking = ({cooking}) => {
     </tbody>
   </table>
 </div>
-            
+             <div>
+         
+             </div>
         </div>
     );
 };

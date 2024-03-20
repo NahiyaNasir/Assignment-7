@@ -10,15 +10,17 @@ import { ToastContainer, toast } from 'react-toastify';
 function App() {
  const[cooks, setCook]=useState([])
  const [cookings,setCooking]=useState([])
- const [remove, setRemove]=useState([])
+
  const handelPreparing=(cooking,id)=>{
   console.log('clicked')
-  console.log(id);
+ // console.log(id);
+  
   const newCooking=[...cookings, cooking]
   setCooking(newCooking)
+  
  
- const newRemove=remove.filter(item=>item.recipe_id !==id)
- setRemove(newRemove)
+ const newRemove=cooks.filter(item=>item.recipe_id !==id)
+ setCook(newRemove)
 console.log(newRemove);
  }
 const handelWantToCook=(recipe)=>{
